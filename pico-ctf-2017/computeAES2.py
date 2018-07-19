@@ -1,4 +1,5 @@
 # AES in ECB mode
+
 import base64
 from Crypto.Cipher import AES
 
