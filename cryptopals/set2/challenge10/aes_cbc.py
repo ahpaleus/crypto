@@ -27,14 +27,12 @@ def enc(message, iv, key):
 		chunks = (len(message)/16+1)*16
 	else:
 		chunks = len(message)/16
-
 	message = pkcsa_pad(message, chunks)
 	x = len(message)
 	y = x/16 
 	cipher = []
 	result = []
 	after_iv = []
-
 	for z in range(y):
 		if z == 0: 
 			after_iv.append(repeating_xor(message[16*z:16*(z+1)],iv))
