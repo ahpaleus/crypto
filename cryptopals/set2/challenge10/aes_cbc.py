@@ -24,11 +24,11 @@ def repeating_xor(buffer, key):
 
 def enc(message, iv, key):
 	if len(message) % 16 != 0:
-		ilosc_czesci = (len(message)/16+1)*16
+		chunks = (len(message)/16+1)*16
 	else:
-		ilosc_czesci = len(message)/16
+		chunks = len(message)/16
 
-	message = pkcsa_pad(message, ilosc_czesci)
+	message = pkcsa_pad(message, chunks)
 	x = len(message)
 	y = x/16 
 	cipher = []
