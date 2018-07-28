@@ -10,7 +10,7 @@ pad = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * \
 
 unpad = lambda s: s[:-ord(s[len(s) - 1:])]
 
-key = 'dupa'*4 # Random 16-byte key
+key = os.urandom(16) # Random 16-byte key
 
 def profile_for(email):
 	if re.search('[&=]', email): 
