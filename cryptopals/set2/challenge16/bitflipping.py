@@ -80,3 +80,21 @@ for x in range(len(userdata)):
 
 print check_admin(str(test4))
 
+'''
+challenge16 $ python bitflipping.py
+comment1=cooking%20MCs;userdata=XXXXXXXXXXX;comment2=%20like%20a%20pound%20of%20bacon
+REGULAR USER ACCOUNT
+0x54 ( T )      ^       0x58 ( X )      ^       0x3b ( ; )      =       0x37 ( 7 )
+0x93 ( � )      ^       0x58 ( X )      ^       0x61 ( a )      =       0xaa ( � )
+0x9b ( � )      ^       0x58 ( X )      ^       0x64 ( d )      =       0xa7 ( � )
+0x76 ( v )      ^       0x58 ( X )      ^       0x6d ( m )      =       0x43 ( C )
+0x8d ( � )      ^       0x58 ( X )      ^       0x69 ( i )      =       0xbc ( � )
+0x4f ( O )      ^       0x58 ( X )      ^       0x6e ( n )      =       0x79 ( y )
+0x95 ( � )      ^       0x58 ( X )      ^       0x3d ( = )      =       0xf0 ( � )
+0x68 ( h )      ^       0x58 ( X )      ^       0x74 ( t )      =       0x44 ( D )
+0x1 (  )        ^       0x58 ( X )      ^       0x72 ( r )      =       0x2b ( + )
+0x54 ( T )      ^       0x58 ( X )      ^       0x75 ( u )      =       0x79 ( y )
+0x49 ( I )      ^       0x58 ( X )      ^       0x65 ( e )      =       0x74 ( t )
+comment1=cookingLQm����{�4+��;admin=true;comment2=%20like%20a%20pound%20of%20bacon
+ADMIN ACCOUNT!
+'''
