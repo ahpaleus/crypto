@@ -73,9 +73,9 @@ encrypted = bytearray(AES_CBC_encrypt(expanded_hash,key,iv))
 encrypted_splitted = split(str(encrypted),16)
 decrypted_message = ''
 
-for t in xrange(len(encrypted_splitted)-1): # Ocenic liczbe przejsc
+for t in xrange(len(encrypted_splitted)-1): 
 	encrypted_iteration = bytearray(encrypted)
-	temp = encrypted_splitted[-(2+t):] # [-2:], [-3:-1], [-4:-2]
+	temp = encrypted_splitted[-(2+t):] 
 	i_temporary = bytearray()
 	test = bytearray(temp[0] + temp[1])
 	encrypted_iteration = bytearray(temp[0] + temp[1])
