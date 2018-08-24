@@ -92,9 +92,7 @@ for t in xrange(len(encrypted_splitted)-1):
 				test[15-y-1] = x
 		
 			if decrypt_and_check_padding(str(test),key,iv) != False:
-				
 				intermediate = x ^ pad
-
 				if not i_temporary:
 					c = x ^ pad ^ encrypted_iteration[15]
 				else:
