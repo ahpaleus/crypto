@@ -69,7 +69,7 @@ for h in xrange(loop_counter):
 	print 'ciphertext: ' + ciphertext_temp
 	print 'ciphertext (hex): ' + hexa(ciphertext_temp)
 
-	print 'AES ^ XOR: '
+	print 'AES ^ CIPHERTEXT: '
 
 	plaintext = ''
 
@@ -95,7 +95,7 @@ Key: YELLOW SUBMARINE
 AES: 76d1cb4bafa246e2e3af035d6c13c372
 ciphertext: /��k��¯�wz3�
                         ciphertext (hex): 2fbee76bf9eb16c2afca777a1f33a81b
-AES ^ XOR:
+AES ^ CIPHERTEXT:
 0.	76	^	2f	=	Y
 1.	d1	^	be	=	o
 2.	cb	^	e7	=	,
@@ -122,7 +122,7 @@ Key: YELLOW SUBMARINE
 AES: d2ec6cdc986d12decfda1f93afee7318
 ciphertext: ��L��M[���?�̋_8
 ciphertext (hex): b1874cb5ec4d5bbdaaf63fdacc8b5f38
-AES ^ XOR:
+AES ^ CIPHERTEXT:
 0.	d2	^	b1	=	c
 1.	ec	^	87	=	k
 2.	6c	^	4c	=
@@ -149,7 +149,7 @@ Key: YELLOW SUBMARINE
 AES: 2da08ecb117b374bc3dab726b2fc84cd
 ciphertext: O��12T.���E�Ф�
 ciphertext (hex): 4fc1ecb23132542eeffafe45d7d0a4af
-AES ^ XOR:
+AES ^ CIPHERTEXT:
 0.	2d	^	4f	=	b
 1.	a0	^	c1	=	a
 2.	8e	^	ec	=	b
@@ -176,7 +176,7 @@ Key: YELLOW SUBMARINE
 AES: c180ab3549fa6e55d14c6667c96fa5b0
 ciphertext: ���
 ciphertext (hex): a0e2d215
-AES ^ XOR:
+AES ^ CIPHERTEXT:
 0.	c1	^	a0	=	a
 1.	80	^	e2	=	b
 2.	ab	^	d2	=	y
