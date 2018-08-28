@@ -50,7 +50,7 @@ QSB0ZXJyaWJsZSBiZWF1dHkgaXMgYm9ybi4='
 example = example.split("\n")
 example = [b64decode(x) for x in example]
 
-key = urandom(16)
+key = urandom(BLOCK_SIZE)
 nonce = 0
 
 example_encrypted = []
