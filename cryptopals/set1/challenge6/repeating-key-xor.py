@@ -1,6 +1,5 @@
 from base64 import b64encode, b64decode
 from binascii import hexlify as hexa
-import binascii
 from isprintable import isprintable
 import re
 
@@ -47,7 +46,6 @@ print normalized_results
 
 print 'Index: ' + str(normalized_results.index(min(normalized_results))) + '-> Value: ' + str(min(normalized_results))
 
-KEYSIZE = 29
 for KEYSIZE in xrange(2,40):
 	chunks = split_string(result_string, KEYSIZE)
 
