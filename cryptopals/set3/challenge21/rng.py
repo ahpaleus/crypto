@@ -3,7 +3,6 @@ import time
 MT = [0 for i in xrange(624)]
 index = 0
 
-
 def initializeGenerator(seed):
 	global MT
 	MT[0] = seed
