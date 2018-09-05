@@ -6,9 +6,7 @@ from os import urandom
 from struct import unpack
 
 k = urandom(16)
-# k = 'A'*16
 nonce = unpack('<Q', urandom(8))[0]
-# nonce = 0
 
 def quote_out(input):
 	if re.search('[;=]', input):
